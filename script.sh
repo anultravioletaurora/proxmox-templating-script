@@ -100,8 +100,8 @@ export username=yuri
 #Name of your storage
 export storage=local-lvm
 
-## Fedora 37
+## Fedora 38
+wget https://download.fedoraproject.org/pub/fedora/linux/releases/38/Cloud/x86_64/images/Fedora-Cloud-Base-38-1.6.x86_64.raw.xz
 #Image is compressed, so need to uncompress first
-wget https://download.fedoraproject.org/pub/fedora/linux/releases/37/Cloud/x86_64/images/Fedora-Cloud-Base-37-1.7.x86_64.raw.xz
 xz -d -v Fedora-Cloud-Base-38-1.6.x86_64.raw.xz
 create_template 9995 "temp-fedora-38" "Fedora-Cloud-Base-38-1.6.x86_64.raw"
